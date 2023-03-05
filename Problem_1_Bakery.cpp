@@ -30,7 +30,7 @@ int main() {
                 bool bb = 1;
                 for (int j = 1; j <= n; j ++) {
                     // if ((tc - xx) * a[j] + (tm - yy) * b[j] > c[j]) {
-                    //     bb = 0;
+                    //     bb = 0;x
                     //     break;
                     // }
                     if ((tc - k) * a[j] + (tm - xxx) * b[j] > c[j]) bb = 0;
