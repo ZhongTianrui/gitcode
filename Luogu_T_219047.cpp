@@ -32,15 +32,15 @@ int main()
         }
         if(s[i]>=m){
             m=s[i];
-            k=i;
+            k=i;    
             int tttt = 0;
                 // cout << a[k - m - 1] << " " << a[k - m + 1] << " " << a[k - m + 2] << " " << a[k - 1] << " " << a[k] << " " << a[k + 2] << " " << k - m + 1 << "\n";
     if ((a[k - m - 1] > a[k - m + 1] and a[k - m + 1] > a[k - m + 2]) or (a[k - m - 1] < a[k - m + 1] and a[k - m + 1] < a[k - m + 2])
     or (a[k + 2] > a[k] and a[k] > a[k - 1]) or a[k + 2] < a[k] and a[k] < a[k - 1]) tttt ++;
-            ttt = max(ttt, tttt + m);
+            ttt = max(ttt, tttt + m + 1);
         }
     }
-    // cout << a[k - m - 1] << " " << a[k - m + 1] << " " << a[k - m + 2] << " " << k - m + 1 << "\n";
+    // cout << a[k - m - 1] << " " << a[k - m + 1] << " " << a[k - m + 2]k << " " << k - m + 1 << "\n";
     // if ((a[k - m - 1] > a[k - m + 1] and a[k - m + 1] > a[k - m + 2]) or (a[k - m - 1] < a[k - m + 1] and a[k - m + 1] < a[k - m + 2])) ttt += 2;
     cout << ttt + 1;
     return 0;
