@@ -22,14 +22,14 @@ int main() {
     for (int i = 1; i <= n; i ++) {
         for (int l = 1; l <= m; l ++) {
             for (int r = m; r >= l; r --) {
-                for (int k = 1; k < l; k ++) {
+                for (int k = 1; k < l; k ++) 
                     dp[i][l][r] = max(dp[i][l][r], suf[i - 1][k][r] + sum[i][r] - sum[i][l - 1]);
-                    dp[i][l][r] = max(dp[i][l][r], suf[i - 1][k][r + 1] + sum[i][r] - sum[i][l - 1]);
+                    dp[i][l][r] = max(dp[i][l][r], suf[i - 1][l][r + 1] + sum[i][r] - sum[i][l - 1]);
                     suf[i][l][r] = max(suf[i][l][r + 1], dp[i][l][r]);
                     if (i == n) {
                         ans = max(ans, dp[i][l][r]);
                     }
-                }
+                
             }
         }
     }
