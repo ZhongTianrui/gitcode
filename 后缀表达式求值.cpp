@@ -27,7 +27,7 @@ int main() {
         } else {
             if (st.size() < 2) {
                 cout << "[ERR] A ERROR IN THE EXPRESSION!\n";
-                cout << "Program returns with err.\n";
+                cout << "Program returns with [ERR CODE=1].\n";
                 system("pause");
                 return 0;
             }
